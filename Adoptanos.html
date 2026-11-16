@@ -1,0 +1,221 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas con propósitos</title>
+    <link rel="icon" href="Imagenes/huella.png" type="image/png">
+    <style>
+        /* Importa la fuente "DM Serif Text" desde Google Fonts
+        para usarla después en los títulos (h2). */
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+        /* Barra de navegación principal (lista del menú superior). */
+        .menu {
+            display: flex;                 /* Coloca los <li> en línea, uno al lado del otro. */
+            justify-content: space-between;/* Reparte el espacio entre los elementos del menú. */
+            list-style: none;              /* Quita los puntos de la lista <ul>. */
+            padding: 0;                    /* Elimina el relleno interno por defecto. */
+            margin: 0;                     /* Elimina el margen externo por defecto. */
+            background-color: #f2f2f2;     /* Fondo gris claro para toda la barra de menú. */
+        }
+
+        /* Clase para los enlaces del menú (tamaño de letra algo mayor). */
+        .menus {
+            font-size: 20px;               /* Aumenta el tamaño de la fuente de los enlaces. */
+        }
+
+        /* Elemento que contiene el logo dentro del menú. */
+        .logo {
+            margin-right: auto;            /* Empuja el resto de elementos hacia la derecha,
+                                            dejando el logo a la izquierda. */
+        }
+
+        /* Cada elemento de la lista del menú (<li>). */
+        .menu li {
+            margin: 0 15px;                /* Deja 15px de espacio a izquierda y derecha de cada <li>. */
+            display: flex;                 /* Convierte el <li> en contenedor flexible. */
+            align-items: center;           /* Centra el contenido verticalmente dentro del <li>. */
+            justify-content: center;       /* Centra el contenido horizontalmente dentro del <li>. */
+            height: 60px;                  /* Fija la altura de cada botón del menú. */
+        }
+
+        /* Estilos de los enlaces del menú (<a>). */
+        .menu a {
+            color: rgb(0, 0, 0);           /* Texto en color negro. */
+            text-decoration: none;         /* Quita el subrayado típico de los enlaces. */
+            padding: 10px;                 /* Relleno alrededor del texto, aumenta el área clicable. */
+            font-weight: bold;             /* Pone el texto en negrita. */
+        }
+
+        /* Efecto al pasar el ratón por encima del enlace del menú. */
+        .menu a:hover {
+            background-color: #dbf3fe;     /* Cambia el fondo a un azul muy claro en hover. */
+        }
+
+        /* Estilo titulo de la tabla */
+        caption {
+            font-family: "DM Serif Text", serif; /* Usa la fuente importada de Google Fonts. */
+            text-align: center;                  /* Centra el texto del título. */
+            font-size: 25px;               /*Tamaño de la letra*/
+            margin-bottom: 40px;    /*Separa el caption de la tabla*/
+            margin-top: 50px;       /*Separa el caption header*/
+        }
+
+        /* Estilo de los títulos h3. */
+        h3 {
+            text-align: center;           /* Centra el texto del subtítulo. */
+            font-weight: normal;          /* Quita la negrita por defecto de h3. */
+        }
+
+        /* Estilo general del cuerpo de la página. */
+        body {
+            background-color: #def3fd;    /* Pone un fondo azul clarito a toda la página. */
+        }
+
+        /* Tamaño de los iconos de redes sociales. */
+        .logos {
+            height: 30px;                 /* Alto de la imagen 30px. */
+            width: 30px;                  /* Ancho de la imagen 30px (cuadrada). */
+        }
+
+        /* Todos los <div> se muestran como flex y el texto centrado.
+        Ojo: afecta a TODOS los div del documento. */
+        div {
+            display: flex;                /* Pone los elementos hijos en línea como flexbox. */
+            text-align: center;           /* Centra el texto dentro del div. */
+        }
+
+        /* Centra la tabla horizontalmente. */
+        .tabla {
+            margin: 0 auto;               /* Auto en izquierda/derecha centra el elemento bloque. */
+            border-collapse: separate;
+            border-spacing: 10px; /* separa las celdas */
+        }
+
+        /* Estilo del recuadro de contenido (fichas de los perritos, por ejemplo). */
+        .contenido {
+            background-color: #f2f2f2; /*color de fondo de la tabla contenido*/
+            border-radius: 20px;          /* Esquinas redondeadas. */
+            border-spacing: 10px;
+        }
+
+
+        /* Aplica esquinas redondeadas a todas las imágenes. */
+        img {
+            border-radius: 20px;          /* Redondea las esquinas de cualquier <img>. */
+        }
+
+        div {
+            padding: 25px;   /*Dar espacio entre el final del body y el footer*/
+        }
+
+                /* Estilo para el pie de página (<footer>) */
+        footer {
+            padding: 15px; /*Esapcios en el footer*/
+            background-color: #f2f2f2;   /* Pone el fondo del pie de página en gris clarito. */
+            text-align: center;
+        }
+
+        .pie {
+            font-size: 18px; /*tamaño letra*/
+            font-weight: bold;  /*Letra en negrita*/
+        }
+    </style>
+</head>
+<body>
+    <header>  <!--Menu-->
+        <nav>
+            <ul class="menu">
+                <li class="logo"><img src="Imagenes/logo.png" height="100px" alt="Logo Huellitas con propósitos" ></li>
+                <li><a class="menus" href="Inicio.html">Inicio</a></li>
+                <li><a class="menus" href="ComoAyudar.html">¿Cómo puedo ayudar?</a></li>
+                <li><a class="menus" href="Adoptanos.html">Adóptanos</a></li>
+                <li><a class="menus" href="Contactanos.html">Contáctanos</a></li>
+                <li><a class="menus" href="Informacion.html">Pedir información</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div> <!--Agrupar contenido para darle estilos-->
+        <table class="tabla">
+            <caption>Nuestros perritos buscan un hogar</caption>  <!--Titulo de la tabla-->
+            <tr> <!--Filas-->
+                <td><!--Celdas dentro de las filas-->
+                <img src="Imagenes/perrito1.jpg" alt="" width="200" height="200">
+                </td>
+                <td class="contenido">
+                <h2>Mia</h2>
+                <h3>Es una cachorrita de unos 6 meses, curiosa <br>
+                y llena de energía. Le encantan los juguetes chirriantes, <br>
+                los escondites y descubrir cada rincón. Ideal para <br>
+                adoptante joven con ganas de compromiso.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <img src="Imagenes/perrito2.jpg" alt="" width="200" height="200">
+                </td>
+                <td class="contenido"><h2>Luna</h2>
+                    <h3>Luna es una dulce mestiza de aproximadamente 2 años, <br>
+                    activa y cariñosa. Le encanta salir de paseo, <br>
+                    revolcarse en la hierba y acurrucarse al final del día. <br>
+                    Perfecta para una familia que disfrute de la compañía perruna. <br></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <img src="Imagenes/perrito3.jpg" alt="" width="200" height="200">
+                </td>
+                <td class="contenido"><h2>Max</h2>
+                    <h3>Max, de 4 años, es un perro grande de corazón aún más grande. <br>
+                    Tranquilo en casa, vigilante en el parque. <br>
+                    Le va muy bien con niños y otros perros. <br>
+                    Está listo para dar el siguiente paso contigo. <br></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <img src="Imagenes/perrito4.jpg" alt="" width="200" height="200">
+                </td>
+                <td class="contenido"><h2>Rocky</h2>
+                    <h3>Rocky tiene 5 años y es un atleta nato. <br>
+                    Necesita mucho ejercicio, caminar al menos una hora al día. <br>
+                    Si estás activo y quieres un compañero de aventuras,<br>
+                    él es el indicado. <br></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <img src="Imagenes/perrita5.jpg" alt="" width="200" height="200">
+                </td>
+                <td class="contenido"><h2>Bella</h2>
+                    <h3>Bella, de 3 años, es tranquila, sociable <br>
+                    y muy buena compañera para personas mayores o <br>
+                    que trabajan desde casa. Le encanta dormir a <br>
+                    los pies del sofá y recibir caricias suaves. <br></h3> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <img src="Imagenes/perrito6.jpg" alt="" width="200" height="200">
+                </td>
+                <td class="contenido"><h2>Charlie</h2>
+                    <h3>Charlie es un señor encantador de unos 4 años. <br>
+                    Ya no busca carreras, sino siestas largas y <br>
+                    paseos relajados al atardecer. Si buscas dar una <br>
+                    segunda oportunidad a un perro sabio y amable, <br>
+                    Charlie te lo agradecerá. <br></h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+        <footer>
+            <p class="pie">#Huellitas con propósitos🐾</p>
+            <a href="https://www.facebook.com/groups/912049465489285/">
+                <img class="logos" src="Imagenes/facebook.png" alt="facebook"></a> |
+                <a href="https://www.instagram.com/galgosdeleon?igsh=MTAwa2NxbTA0dzZiNA==">
+                    <img class="logos" src="Imagenes/instagram.png" alt="instagram"></a> |
+                <a href="https://www.tiktok.com/@zeus20.23?_r=1&_t=ZS-91Lqp7w5Kp6">
+                    <img class="logos" src="Imagenes/tik-tok.png" alt="tik tok"></a>
+        </footer>
+</body>
+</html>
