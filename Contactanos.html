@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas con propósitos</title>
+    <link rel="icon" href="Imagenes/huella.png" type="image/png">
+    <style>
+        /* Importa una fuente desde Google Fonts llamada "DM Serif Text"
+        para poder usarla luego en los textos (por ejemplo en los títulos h2). */
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+        /* Estilos para la barra de menú (la lista de navegación de arriba). */
+        .menu {
+            display: flex;                 /* Coloca los elementos del menú en fila, uno al lado del otro. */
+            justify-content: space-between;/* Reparte los elementos dejando espacio entre ellos a lo ancho. */
+            list-style: none;              /* Quita los puntos de la lista <ul>. */
+            padding: 0;                    /* Quita el espacio interior por defecto de la lista. */
+            margin: 0;                     /* Quita el margen exterior por defecto de la lista. */
+            background-color: #f2f2f2;     /* Pone un fondo gris claro a toda la barra del menú. */
+        }
+
+        /* Estilos para los enlaces del menú (el texto de Inicio, Contactanos, etc.). */
+        .menus {
+            font-size: 20px;               /* Aumenta el tamaño de la letra de esos enlaces. */
+        }
+
+        /* Estilo para el contenedor del logo dentro del menú. */
+        .logo {
+            margin-right: auto;            /* Empuja el resto de elementos hacia la derecha,
+                                            dejando el logo pegado a la izquierda. */
+        }
+
+        /* Estilos para cada elemento de la lista del menú (<li>). */
+        .menu li {
+            margin: 0 15px;                /* Deja 15 píxeles de espacio a la izquierda y derecha de cada opción. */
+            display: flex;                 /* Convierte el <li> en un contenedor flexible. */
+            align-items: center;           /* Centra el contenido verticalmente dentro del <li>. */
+            justify-content: center;       /* Centra el contenido horizontalmente dentro del <li>. */
+            height: 60px;                  /* Da una altura fija de 60 píxeles a cada “botón” del menú. */
+            background-color: #f2f2f2;     /* Mantiene el fondo gris claro igual que el del menú. */
+        }
+
+        /* Estilos para los enlaces (<a>) dentro del menú. */
+        .menu a {
+            color: rgb(0, 0, 0);           /* Pone el texto en color negro. */
+            text-decoration: none;         /* Quita el subrayado típico de los enlaces. */
+            padding: 10px;                 /* Añade espacio alrededor del texto para que parezca un botón. */
+            font-weight: bold;             /* Pone el texto en negrita. */
+        }
+
+        /* Efecto cuando pasas el ratón por encima de un enlace del menú. */
+        .menu a:hover {
+            background-color: #dbf3fe;     /* Cambia el fondo a un azul muy clarito al pasar el ratón. */
+        }
+
+        /* Estilos para todos los títulos <h2>. */
+        h2 {
+            font-family: "DM Serif Text", serif;  /* Usa la fuente que se importó de Google Fonts. */
+            text-align: center;                   /* Centra el texto del título. */
+        }
+
+        /* Estilos para todos los <h3> (subtítulos o textos destacados). */
+        h3 {
+            text-align: center;            /* Centra el texto. */
+            font-weight: normal;           /* Quita la negrita por defecto de los <h3>. */
+        }
+
+        /* Estilo general del fondo de la página. */
+        body {
+            background-color: #def3fd;     /* Pone el fondo de la página de color azul claro. */
+        }
+
+        /* Estilos para las imágenes de los iconos de redes sociales. */
+        .logos {
+            height: 30px;                  /* Altura de la imagen: 30 píxeles. */
+            width: 30px;                   /* Anchura de la imagen: 30 píxeles (son cuadradas). */
+        }
+
+        /* Estilos para el mapa (el iframe del mapa de Google) */
+        .mapa {
+            border-radius: 20px;           /* Redondea las esquinas del mapa con 20 píxeles. */
+            border: 2px solid black;       /* Añade un borde negro de 2 píxeles alrededor del mapa. */
+        }
+
+        /* Contenedor del mapa para poder centrarlo. */
+        .divMapa {
+            display: flex;                 /* Convierte el contenedor en flexbox. */
+            justify-content: center;       /* Centra el mapa horizontalmente dentro del contenedor. */
+        }
+
+        div {
+            padding: 25px;  /*Dar espacio entre el final del body y el footer*/
+        }
+
+        /* Estilo para el pie de página (<footer>) */
+        footer {
+            padding: 15px; /*Esapcios en el footer*/
+            background-color: #f2f2f2;   /* Pone el fondo del pie de página en gris clarito. */
+            text-align: center; /*Centrar el texto*/
+        }
+
+        .pie {
+            font-size: 18px; /*tamaño letra*/
+            font-weight: bold;  /*Letra en negrita*/
+        }
+    </style>
+</head>
+<body>
+    <header>  <!--Menu-->
+        <nav>
+            <ul class="menu">
+                <li class="logo"><img src="Imagenes/logo.png" height="100px" alt="Logo Huellitas con propósitos" ></li>
+                <li><a class="menus" href="Inicio.html">Inicio</a></li>
+                <li><a class="menus" href="ComoAyudar.html">¿Cómo puedo ayudar?</a></li>
+                <li><a class="menus" href="Adoptanos.html">Adóptanos</a></li>
+                <li><a class="menus" href="Contactanos.html">Contáctanos</a></li>
+                <li><a class="menus" href="Informacion.html">Pedir información</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h2>Horarios</h2>  <!--titulos-->
+        <h3>Abrimos de 8:00 am - 2:30 pm<br>
+            y de 4:00 pm - 8:00 pm</h3>
+        <h2>¿Donde contactarnos?</h2>
+        <h3>👤 655-555-555 <br>
+            facebook: HuellasConPropósitos <br>
+            Instagram: @HuellasConPropósitos <br>
+            tik tok: @HuellasConPropósitos <br>
+        <br>
+        <h2>Mapa</h2>
+        <div class="divMapa">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.7004519809243!2d-5.570240023304959!3d42.56165307117488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd37855a17ef5889%3A0xb41555000e0547f5!2sAsociacion%20Protectora%20de%20Animales%20y%20Plantas%20de%20Le%C3%B3n!5e0!3m2!1ses-419!2ses!4v1763264463844!5m2!1ses-419!2ses" 
+            width="600" height="400"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <!--eframe para enlazar el mapa con tu dirección-->
+        </div>
+        <footer>  <!--Pie de página-->
+            <p class="pie">#Huellitas con propósitos🐾</p>
+            <a href="https://www.facebook.com/groups/912049465489285/">  <!--Enlazar la dirección de un medio de contacto en este caso facebook-->
+                <img class="logos" src="Imagenes/facebook.png" alt="facebook"></a> | <!--Enlazar los iconos-->
+                <a href="https://www.instagram.com/galgosdeleon?igsh=MTAwa2NxbTA0dzZiNA==">
+                    <img class="logos" src="Imagenes/instagram.png" alt="instagram"></a> |
+                <a href="https://www.tiktok.com/@zeus20.23?_r=1&_t=ZS-91Lqp7w5Kp6">
+                    <img class="logos" src="Imagenes/tik-tok.png" alt="tik tok"></a>
+        </footer>
+</body>
+</html>
