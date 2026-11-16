@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas con propósitos</title>
+    <link rel="shortcut icon" href="/Imagenes/huella.png" type="image/png">
+    <style>
+        /* Importa una fuente desde Google Fonts llamada "DM Serif Text"
+        para poder usarla luego en los títulos (por ejemplo en h2). */
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+        /* Estilos para la lista del menú de navegación (la barra de arriba) */
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        /* Estilo para los enlaces del menú (el tamaño de la letra de "Inicio", "Adoptanos", etc.) */
+        .menus {
+            font-size: 20px;
+        }
+
+        /* Estilo para el contenedor del logo dentro del menú */
+        .logo {
+            margin-right: auto;
+        }
+
+        /* Estilos para cada elemento de la lista del menú (<li>) */
+        .menu li {
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            background-color: #f2f2f2;
+        }
+
+        /* Estilos para los enlaces (<a>) dentro del menú */
+        .menu a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        /* Efecto cuando pasas el ratón por encima de un enlace del menú */
+        .menu a:hover {
+            background-color: #dbf3fe;
+        }
+
+        /* Estilos para todos los títulos <h2> de la página */
+        h2 {
+            font-family: "DM Serif Text", serif;
+            text-align: center;
+        }
+
+        /* Estilos para todos los <h3> (subtítulos o textos importantes) */
+        h3 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        /* Estilo general del fondo de la página */
+        body {
+            background-color: #def3fd;
+        }
+
+        /* Estilos para los iconos de redes sociales (las imágenes pequeñas del footer) */
+        .logos {
+            height: 30px;
+            width: 30px;
+        }
+
+        .video {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .vide {
+            border-radius: 25px;
+        }
+
+        /* Estilo para el pie de página (<footer>) */
+        footer {
+            padding: 15px;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .pie {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú -->
+    <header>
+        <nav>
+            <ul class="menu"> 
+                <li class="logo"><img src="Imagenes/logo.png" height="100px" alt="Logo Huellitas con propósitos"></li>
+                <li><a class="menus" href="Inicio.html">Inicio</a></li>
+                <li><a class="menus" href="ComoAyudar.html">¿Cómo puedo ayudar?</a></li>
+                <li><a class="menus" href="Adoptanos.html">Adóptanos</a></li>
+                <li><a class="menus" href="Contactanos.html">Contáctanos</a></li>
+                <li><a class="menus" href="Informacion.html">Pedir información</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>🌿Iluminemos una vida juntos🌿</h2> 
+    <h3>Cada día, en refugios y calles de todo el mundo, miles de animales <br>
+        esperan en silencio una segunda oportunidad. Esperan un gesto, <br>
+        una mirada compasiva, un corazón dispuesto a abrir sus puertas. <br>
+        No piden lujos, solo un lugar donde sentirse seguros, donde una <br>
+        caricia valga más que cualquier palabra. <br>
+        <br>
+        Adoptar es mucho más que ofrecer un hogar. Es rescatar una vida, <br>
+        devolver la esperanza y descubrir una forma de amor que no tiene condiciones. <br>
+        Es entender que cada ladrido, cada ronroneo o cada mirada agradecida <br>
+        puede iluminar nuestros días de una manera que no imaginábamos. <br>
+        <br>
+        Cuando eliges adoptar, te conviertes en parte del cambio. <br>
+        Transformas la soledad en compañía, el abandono en confianza, <br>
+        y la oscuridad en luz. Iluminas una vida que, sin ti, seguiría esperando.<br>
+        <br>
+        No compres amistad, regala amor verdadero.<br>
+        No fomentes el negocio del sufrimiento, sé parte de la solución.<br>
+        Porque la verdadera raza es la lealtad, y el verdadero hogar es aquel donde hay amor. <br>
+        <br>
+        Hoy puedes ser la diferencia. <br>
+        Hoy puedes iluminar una vida… y dejar que ella ilumine la tuya. 🐾
+    </h3>
+    <br>
+    <!-- Inserción del video -->
+    <div class="video">
+        <video class="vide" src="videos/VideoPerrito.mp4" controls width="600px" height="400px"></video>
+    </div>
+    <!-- Pie de página -->
+    <footer>
+        <p class="pie">#Huellitas con propósitos🐾</p>
+        <a href="https://www.facebook.com/groups/912049465489285/">
+            <img class="logos" src="Imagenes/facebook.png" alt="facebook">
+        </a> |
+        <a href="https://www.instagram.com/galgosdeleon?igsh=MTAwa2NxbTA0dzZiNA==
+                <a href="https://www.tiktok.com/@zeus20.23?_r=1&_t=ZS-91Lqp7w5Kp6">
+                    <img class="logos" src="Imagenes/tik-tok.png" alt="tik tok"></a>
+        </footer>
+</body>
+</html>
