@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huellitas con propósitos</title>
-    <link rel="icon" href="Imagenes/huella.png" type="image/png">
+    <link rel="icon" href="imagenes/huella.png" type="image/png">
+
     <style>
         /* Importa la fuente "DM Serif Text" desde Google Fonts,
         para poder usarla luego en los títulos (h2). */
@@ -12,144 +14,178 @@
 
         /* Barra de menú de arriba (la lista horizontal de navegación). */
         .menu {
-            display: flex;                /* Coloca los elementos del menú en línea, uno al lado del otro. */
-            justify-content: space-between; /* Reparte el espacio entre los elementos para que queden separados. */
-            list-style: none;             /* Quita los puntos de la lista <ul>. */
-            padding: 0;                   /* Quita el espacio interior por defecto de la lista. */
-            margin: 0;                    /* Quita el margen exterior por defecto de la lista. */
-            background-color: #f2f2f2;    /* Pone un fondo gris clarito a toda la barra. */
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #f2f2f2;
         }
 
         /* Estilo del texto de los enlaces del menú (Inicio, Adoptanos, etc.). */
         .menus {
-            font-size: 20px;              /* Hace la letra más grande. */
+            font-size: 20px;
         }
 
         /* Contenedor del logo dentro del menú. */
         .logo {
-            margin-right: auto;           /* Empuja el resto de elementos hacia la derecha
-                                            y deja el logo pegado a la izquierda. */
+            margin-right: auto;
         }
 
         /* Cada elemento del menú (<li>). */
         .menu li {
-            margin: 0 15px;               /* Deja 15 píxeles de espacio a los lados de cada botón. */
-            display: flex;                /* Convierte el <li> en un contenedor flexible. */
-            align-items: center;          /* Centra verticalmente el contenido dentro del <li>. */
-            justify-content: center;      /* Centra horizontalmente el contenido dentro del <li>. */
-            height: 60px;                 /* Da una altura fija de 60 píxeles a cada botón del menú. */
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
         }
 
         /* Estilos de los enlaces (<a>) dentro del menú. */
         .menu a {
-            color: rgb(0, 0, 0);          /* Pone el texto en negro. */
-            text-decoration: none;        /* Quita el subrayado típico de los enlaces. */
-            padding: 10px;                /* Añade espacio alrededor del texto para que parezca un botón. */
-            font-weight: bold;            /* Pone la letra en negrita. */
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
         }
 
         /* Efecto cuando pasas el ratón por encima de los enlaces del menú. */
         .menu a:hover {
-            background-color: #dbf3fe;    /* Cambia el fondo a un azul muy clarito al pasar el ratón. */
+            background-color: #dbf3fe;
         }
 
         /* Estilo de todos los títulos <h2>. */
         h2 {
-            font-family: "DM Serif Text", serif;  /* Usa la fuente que importaste de Google. */
-            text-align: center;                   /* Centra el texto. */
+            font-family: "DM Serif Text", serif;
+            text-align: center;
         }
 
         /* Estilo de todos los textos <h3>. */
         h3 {
-            text-align: center;          /* Centra el texto. */
-            font-weight: normal;         /* Quita la negrita por defecto de los h3. */
+            text-align: center;
+            font-weight: normal;
         }
 
         /* Fondo general de la página. */
         body {
-            background-color: #def3fd;   /* Pinta todo el fondo de azul clarito. */
+            background-color: #def3fd;
             text-align: center;
         }
 
-        /* Tamaño de los iconos de redes sociales (imágenes de facebook, instagram, etc.). */
+        /* Tamaño de los iconos de redes sociales. */
         .logos {
-            height: 30px;                /* Alto de la imagen 30 píxeles. */
-            width: 30px;                 /* Ancho 30 píxeles (imagen cuadrada). */
+            height: 30px;
+            width: 30px;
         }
 
         /* Imagen grande de las secciones (Adoptar, Voluntariado, Donaciones). */
         .img {
-            display: block;              /* Hace que la imagen se comporte como un bloque (ocupa toda la línea). */
-            margin: 0 auto;              /* Centra la imagen horizontalmente. */
-            width: 300px;                /* Ancho fijo de 300 píxeles. */
-            border-radius: 20px;         /* Redondea las esquinas de la imagen. */
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            border-radius: 20px;
         }
 
         /* Imagen pequeña para la parte de "Difusión". */
         .imgn {
-            height: 50px;                /* Alto de la imagen 50 píxeles. */
-            width: 50px;                 /* Ancho de la imagen 50 píxeles. */
-            display: block;              /* Se comporta como un bloque. */
-            margin: 0 auto;              /* La centra horizontalmente. */
-            padding: 25px;                /*Dar espacio entre el final del body y el footer*/
+            height: 50px;
+            width: 50px;
+            display: block;
+            margin: 0 auto;
+            padding: 25px;
         }
 
-        /* Párrafos que usas como línea de separación con guiones/barras. */
+        /* Párrafos que usas como línea de separación. */
         .p {
-            text-align: center;          /* Centra el texto dentro del párrafo. */
+            text-align: center;
         }
 
-        /* Estilo para el pie de página (<footer>) */
+        /* Estilo para el pie de página (<footer>). */
         footer {
-            padding: 15px; /*Esapcios en el footer*/
-            background-color: #f2f2f2;   /* Pone el fondo del pie de página en gris clarito. */
+            padding: 15px;
+            background-color: #f2f2f2;
             text-align: center;
         }
 
         .pie {
-            font-size: 18px; /*tamaño letra*/
-            font-weight: bold;  /*Letra en negrita*/
+            font-size: 18px;
+            font-weight: bold;
         }
 
-</style>
+    </style>
 </head>
+
 <body>
-    <header>  <!--Menu-->
+
+    <header>
+        <!--Menu-->
         <nav>
             <ul class="menu">
-                <li class="logo"><img src="Imagenes/logo.png" height="100px" alt="Logo Huellitas con propósitos" ></li>
-                <li><a class="menus" href="Inicio.html">Inicio</a></li>
+
+                <li class="logo">
+                    <img src="imagenes/logo.png" height="100px"
+                         alt="Logo Huellitas con propósitos">
+                </li>
+
+                <li><a class="menus" href="index.html">Inicio</a></li>
                 <li><a class="menus" href="ComoAyudar.html">¿Cómo puedo ayudar?</a></li>
                 <li><a class="menus" href="Adoptanos.html">Adóptanos</a></li>
                 <li><a class="menus" href="Contactanos.html">Contáctanos</a></li>
                 <li><a class="menus" href="Informacion.html">Pedir información</a></li>
+
             </ul>
         </nav>
     </header>
+
     <h2>¿Cómo puedo ayudar?</h2>
+
     <h4>🐾 Adoptando</h4>
-        <h3>“Dale un hogar a un animal que lo necesita. <br>
-        No compres, adopta y descubre el amor incondicional.”</h3>
-        <img class="img" src="Imagenes/Adoptar.png" alt="">
-        <p class="p">_____________________________________________</p>
+
+    <h3>
+        “Dale un hogar a un animal que lo necesita. <br>
+        No compres, adopta y descubre el amor incondicional.”
+    </h3>
+
+    <img class="img" src="imagenes/Adoptar.png" alt="Adoptar un animal">
+
+    <p class="p">_____________________________________________</p>
+
     <h4>🌱 Voluntariado</h4>
-    <h3>“Comparte tu tiempo y energía. Ayuda en refugios y eventos, <br>
-        y haz la diferencia en la vida de muchos animales.”</h3>
-        <img class="img" src="Imagenes/voluntariado.png" alt="">
-        <p class="p">_____________________________________________</p>
+
+    <h3>
+        “Comparte tu tiempo y energía. Ayuda en refugios y eventos, <br>
+        y haz la diferencia en la vida de muchos animales.”
+    </h3>
+
+    <img class="img" src="imagenes/voluntariado.png" alt="Voluntariado">
+
+    <p class="p">_____________________________________________</p>
+
     <h4>💰 Donaciones</h4>
-    <h3>“Cada aporte cuenta. Tu donación ayuda a mantener refugios, <br>
-        brindar atención veterinaria y darles un hogar seguro.”</h3>
-        <img class="img" src="Imagenes/Donaciones.png" alt="">
-        <p class="p">_____________________________________________</p>
+
+    <h3>
+        “Cada aporte cuenta. Tu donación ayuda a mantener refugios, <br>
+        brindar atención veterinaria y darles un hogar seguro.”
+    </h3>
+
+    <img class="img" src="imagenes/Donaciones.png" alt="Donaciones">
+
+    <p class="p">_____________________________________________</p>
+
     <h4>📝 Difusión</h4>
-    <h3>“Comparte nuestra causa. Difundir nuestras historias <br>
-        es ayudar a más animales a encontrar un hogar.”</h3>
-    <img class="imgn" src="Imagenes/Comparte.png" alt="">  <!--Enlazar imagenes-->
+
+    <h3>
+        “Comparte nuestra causa. Difundir nuestras historias <br>
+        es ayudar a más animales a encontrar un hogar.”
+    </h3>
+
+    <img class="imgn" src="imagenes/Comparte.png" alt="Comparte">
 
     <h3>Formas rápidas de ayudar desde casa:</h3>
+
     <ul>
         <li>Adoptando o acogiendo temporalmente a un perrito.</li>
+
         <li>Si no puedes adoptar ahora mismo:
             <ul>
                 <li>Apadrina un perro del refugio.</li>
@@ -157,18 +193,31 @@
                 <li>Realiza una pequeña donación mensual.</li>
             </ul>
         </li>
+
         <li>Compartiendo nuestras publicaciones en redes sociales.</li>
         <li>Hablando con amigos y familia sobre la importancia de adoptar.</li>
     </ul>
 
-        <footer>  <!--Adentro va el contenido del pie de página-->
-            <p class="pie">#Huellitas con propósitos🐾</p>
-            <a href="https://www.facebook.com/groups/912049465489285/">
-                <img class="logos" src="Imagenes/facebook.png" alt="facebook"></a> |
-                <a href="https://www.instagram.com/galgosdeleon?igsh=MTAwa2NxbTA0dzZiNA==">
-                    <img class="logos" src="Imagenes/instagram.png" alt="instagram"></a> |
-                <a href="https://www.tiktok.com/@zeus20.23?_r=1&_t=ZS-91Lqp7w5Kp6">
-                    <img class="logos" src="Imagenes/tik-tok.png" alt="tik tok"></a>
-        </footer>
+    <footer>
+        <!--Adentro va el contenido del pie de página-->
+
+        <p class="pie">#Huellitas con propósitos🐾</p>
+
+        <a href="https://www.facebook.com/groups/912049465489285/">
+            <img class="logos" src="imagenes/facebook.png" alt="facebook">
+        </a> |
+
+        <a href="https://www.instagram.com/galgosdeleon?igsh=MTAwa2NxbTA0dzZiNA==">
+            <img class="logos" src="imagenes/instagram.png" alt="instagram">
+        </a> |
+
+        <a href="https://www.tiktok.com/@zeus20.23?_r=1&_t=ZS-91Lqp7w5Kp6">
+            <img class="logos" src="imagenes/tik-tok.png" alt="tik tok">
+        </a>
+
+    </footer>
+
 </body>
+</html>
+
 </html>
