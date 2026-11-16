@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas con propósitos</title>
+    <link rel="icon" href="Imagenes/huella.png" type="image/png">
+    <style>
+        /* Importa una fuente de Google Fonts llamada "DM Serif Text"
+        para poder usarla en los textos (en este caso en los <h2>). */
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+        /* Estilos para la lista del menú de navegación (la barra de arriba) */
+        .menu {
+            display: flex;                /* Coloca los elementos del menú en línea (uno al lado del otro). */
+            justify-content: space-between; /* Deja espacio entre los elementos para que se repartan en el ancho. */
+            list-style: none;             /* Quita los puntos de la lista <ul>. */
+            padding: 0;                   /* Quita el espacio interno por defecto de la lista. */
+            margin: 0;                    /* Quita el margen por defecto de la lista. */
+            background-color: #f2f2f2;    /* Pone un fondo gris clarito a la barra de menú. */
+        }
+
+        /* Estilos para los enlaces del menú (el texto de Inicio, Adoptanos, etc.) */
+        .menus {
+            font-size: 20px;              /* Aumenta el tamaño de letra de los enlaces del menú. */
+        }
+
+        /* Estilo para el contenedor del logo dentro del menú */
+        .logo {
+            margin-right: auto;           /* Empuja el resto de elementos del menú hacia la derecha,
+                                            dejando el logo a la izquierda. */
+        }
+
+        /* Estilos para cada elemento de la lista del menú (<li>) */
+        .menu li {
+            margin: 0 15px;               /* Deja 15px de espacio horizontal entre cada opción del menú. */
+            display: flex;                /* Convierte el <li> en un contenedor flexible para centrar su contenido. */
+            align-items: center;          /* Centra el contenido verticalmente dentro del <li>. */
+            justify-content: center;      /* Centra el contenido horizontalmente dentro del <li>. */
+            height: 60px;                 /* Da una altura fija a cada botón del menú. */
+            background-color: #f2f2f2;    /* Mantiene el mismo fondo gris claro que la barra de menú. */
+        }
+
+        /* Estilos para los enlaces del menú (<a> dentro de .menu) */
+        .menu a {
+            color: rgb(0, 0, 0);          /* Pone el texto en color negro. */
+            text-decoration: none;        /* Quita el subrayado típico de los enlaces. */
+            padding: 10px;                /* Añade espacio alrededor del texto para que parezca un botón. */
+            font-weight: bold;            /* Pone el texto en negrita. */
+        }
+
+        /* Efecto cuando pasas el ratón por encima de un enlace del menú */
+        .menu a:hover {
+            background-color: #dbf3fe;    /* Cambia el fondo a azul muy clarito al pasar el ratón. */
+        }
+
+        /* Estilos para todos los títulos <h2> de la página */
+        h2 {
+            font-family: "DM Serif Text", serif;  /* Usa la fuente bonita que importaste al principio. */
+            text-align: center;                   /* Centra el texto del título. */
+        }
+
+        /* Estilos para todos los <h3> (subtítulos o textos importantes) */
+        h3 {
+            text-align: center;          /* Centra el texto. */
+            font-weight: normal;         /* Quita la negrita por defecto de los <h3>. */
+        }
+
+        /* Estilo general del fondo de la página */
+        body {
+            background-color: #def3fd;   /* Pone el fondo de la página de color azul clarito. */
+        }
+
+        /* Estilos para los iconos de redes sociales (imágenes pequeñas del footer) */
+        .logos {
+            height: 30px;                /* Alto de la imagen: 30 píxeles. */
+            width: 30px;                 /* Ancho de la imagen: 30 píxeles (cuadrada). */
+        }
+        .correo {
+            font-size: 24px;                /*Agrandar el tamaño de la letra*/
+            display: block;              /*centrar el texto*/
+            text-align: center;          /*centrar el texto*/
+        }
+        input {
+            border-radius: 5px;  /*Bordear el input*/
+        }
+        label {
+            font-weight: bold;  /*Negrita*/
+        }
+        form {
+            text-align: center;  /*Cnetrar el form*/
+        }
+        a {
+            padding: 15px;  /*Espacio debajo del a*/
+        }
+
+        div {
+            padding: 25px; /*Dar espacio entre el final del body y el footer*/
+        }
+
+        /* Estilo para el pie de página (<footer>) */
+        footer {
+            padding: 15px; /*Esapcios en el footer*/
+            background-color: #f2f2f2;   /* Pone el fondo del pie de página en gris clarito. */
+            text-align: center; /*Centrar el texto*/
+        }
+
+        .pie {
+            font-size: 18px; /*tamaño letra*/
+            font-weight: bold;  /*Letra en negrita*/
+        }
+
+        div {
+            padding: 10px;
+        }
+
+        form {
+        border: 2px solid black; /*Borde negro*/
+        border-radius: 15px;  /*redondear las esquinas*/
+        padding: 15px;         /* espacio interno */
+        width: 400px;          /* ancho de la "caja" */
+        margin: 20px auto;     /* centra la caja en la página */
+        background-color: #f2f2f2 /*Color de fondo del form*/
+        }
+
+    </style>
+</head>
+<body>
+    <!--Menu-->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><img src="Imagenes/logo.png" height="100px" alt="Logo Huellitas con propósitos" ></li>
+                <li><a class="menus" href="Inicio.html">Inicio</a></li>
+                <li><a class="menus" href="ComoAyudar.html">¿Cómo puedo ayudar?</a></li>
+                <li><a class="menus" href="Adoptanos.html">Adóptanos</a></li>
+                <li><a class="menus" href="Contactanos.html">Contáctanos</a></li>
+                <li><a class="menus" href="Informacion.html">Pedir información</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Formulario</h2>
+    <form action="formulario">
+        <div> <!--Cada elemento del formulario-->
+            <label for="Nomb">Nombre: </label> <!--contenido del formulario-->
+            <input type="text" id="nombre" placeholder="  Escribe tu nombre" action="#" required >
+        </div>
+
+        <div>
+            <label for="Edad">Edad</label>
+            <input type="number" name="Edad">  <!--opción de relleno de datos-->
+        </div>
+
+        <div>
+                    <label for="gmai">Email: </label>
+            <input type="text" id="gmail" placeholder="  ej: pepe@gmail.com" action="#" required >
+        </div>
+
+        <div>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" placeholder=" ej: 666 666 666">
+        </div>
+
+        <div>
+            <label for="time">Horario preferido de contacto</label>
+            <input type="time" name="time"  background-color: #f2f2f2>   <!--Opción de hora-->
+        </div>
+
+        <div>
+            <label>Tipo de perro que desea adoptar</label>
+            <select name="Tipo_perro"> <!--Desplegable-->
+                <option value="select" disabled selected>--Seleccione--</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="adulto">Adulto</option>
+                <option value="señor">Señor</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Sexo del perro</label>
+            <select name="Sexo">
+                <option value="select" disabled selected>--Seleccione--</option>  <!--Opcion de selección, (radio)-->
+                <option value="macho">Macho</option>
+                <option value="hembra">Hembra</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="pregunta">¿Haz tenido un perro antes?</label>  <!--Opcion de selección, (radio)-->
+            <input type="radio" name="Experiencia" value="Si"> Si
+            <input type="radio" name="Experiencia" value="No"> No
+        </div>
+
+        <div>
+            <label for="Info" class="Infor" style="display:block; margin-bottom:5px;">Cuentanos por que deseas adoptar: </label>
+            <textarea name="" rows="5" placeholder="Porque..."></textarea> <!--Opción de escribir-->
+
+        </div>
+
+        <div>
+            <label>
+            <input type="checkbox" name="acepto" required>
+            Acepto las condiciones de adopción responsable
+        </label>
+        </div>
+        <button type="submit">Enviar formulario</button><!--submi para decirle al navegador que al pulsar enviar se envien los datos del input-->
+    </form>
+    <a class="correo" href="mailto:Carolinagomezvelez753@gmail.com?subject=Consulta%20desde%20la%20web&body=Hola,%20tengo%20una%20pregunta...">
+        📩 Escríbenos</a>  <!--Opcion para enviar un correo-->
+
+         <!--Pie de página-->
+        <footer>
+            <p class="pie">#Huellitas con propósitos🐾</p>
+            <a href="https://www.facebook.com/groups/912049465489285/">
+                <img class="logos" src="Imagenes/facebook.png" alt="facebook"></a> |
+                <a href="https://www.instagram.com/galgosdeleon?igsh=MTAwa2NxbTA0dzZiNA==">
+                    <img class="logos" src="Imagenes/instagram.png" alt="instagram"></a> |
+                <a href="https://www.tiktok.com/@zeus20.23?_r=1&_t=ZS-91Lqp7w5Kp6">
+                    <img class="logos" src="Imagenes/tik-tok.png" alt="tik tok"></a>
+        </footer>
+</body>
+</html>
